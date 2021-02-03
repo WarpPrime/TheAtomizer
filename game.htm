@@ -1,0 +1,101 @@
+<head>
+	<script type="text/javascript" src="quark.js"></script>
+	<script type="text/javascript" src="number-formatter.js"></script>
+	<script type="text/javascript" src="hiding.js"></script>
+	<script type="text/javascript" src="proton.js"></script>
+	<script type="text/javascript" src="resourceObserver.js"></script>
+	<script type="text/javascript" src="resources.js"></script>
+	<script type="text/javascript" src="saving.js"></script>
+
+
+	<link rel="stylesheet" href="popup.css">
+	<link rel="stylesheet" href="column.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="collapsible.css">
+	<link rel="stylesheet" href="tabs.css">
+
+    	<style>
+		.invert { /* class invert svg on an img tag */
+  		         filter: invert(1);
+		}
+	</style>
+</head>
+<body style="font-family:orbitron;font-weight:bold;color:#ffffff;background-color:#000020" onLoad="hideAll(); confirmLoad();">
+
+<p class="pinned"><span style="float: left; width: 10%;"><br><img src='icons/atom-white.svg' height="48" class="invert" style="margin: -20px; object-position: 0px 0px;" /></span><span  style="float: left; width: 30%;"><br>Welcome to The Atomizer!</span></center></span><span style="float: left; width: 30%;"><br>v0.2</center></span><span style="float: left; width: 10%;"><br>asdf</center></span></p>
+
+<button class="tablink" onclick="openPage('Resources', this)" id="defaultOpen">Resources</button>
+<button class="tablink" onclick="openPage('Research', this)">Research</button>
+
+
+
+<div id="Resources" class="tabcontent">
+	<div id="energy">
+		<p hidden id="electronvolts">0</p>
+		<h3 style="color:#ffb000;font-family:orbitron;padding:1%;">A total of <span id="est_electronvolts">0</span>eV has been generated through nuclear reactions.</h3>
+	</div>
+
+	<div class="column1">
+		<p>You have <span id="gluons">0</span> gluons</p>
+		<p>You have <span id="electrons">0</span> electrons</p>
+	</div>
+	<div id="default_quark" class="column1">
+		<p>You have <span id="up_quarks">0</span> up quarks</p>
+		<p>You have <span id="down_quarks">0</span> down quarks</p>
+	</div>
+	<div id="quark_2" class="column1">
+		<p>You have <span id="charm_quarks">0</span> charm quarks</p>
+		<p>You have <span id="strange_quarks">0</span> strange quarks</p>
+	</div>
+	<div id="quark_3" class="column1">
+		<p>You have <span id="top_quarks">0</span> top quarks</p>
+		<p>You have <span id="bottom_quarks">0</span> bottom quarks</p>
+	</div>
+
+	<p>&nbsp<br>&nbsp<br>&nbsp</p>
+
+	<button id="toggleHadrons" class="collapsible">Toggle Hadrons Section</button>
+	<div id="hadrons" class="content">
+		<h4>You have <span id="protons">0</span> protons</h4>
+		<p>Protons are made up of two up quarks and one down quark, as well as an unknown number of gluons. A proton has a mass of 938.272 MeV.<br><button id='makeProton' onclick="makeProton()" style="font-family:orbitron;font-weight:900" class="button1">Attempt to synthesize</button></p>
+
+		<h4>You have <span id="neutrons">0</span> neutrons</h4>
+		<p>Neutrons are made up of one up quark and two down quarks, as well as an unknown number of gluons. A proton has a mass of 939.565 MeV.<br><button id='makeNeutron' onclick="makeNeutron()" style="font-family:orbitron;font-weight:900" class="button1">Attempt to synthesize</button></p>
+	</div>
+
+	<button id="toggleAtoms" class="collapsible">Toggle Atoms Section</button>
+	<div id="atoms" class="content">
+		<button id="toggleHydrogen" class="collapsible2">Toggle Hydrogen Subsection</button>
+		<div id="hydrogen" class="content">
+			<div id="H1">
+				<h4>You have <span id="1H">0</span> atoms of <sup>1</sup>&#x2009H.</h4>
+				<p>Also known as protium, most hydrogen atoms are this isotope, with one proton and one electron.<br><button id='makeH1' onclick="makeH(1)"  style="font-family:orbitron;font-weight:900" class="button1">Attempt to synthesize</button></p>
+			</div>
+			<div id="H2">
+				<h4>You have <span id="2H">0</span> atoms of <sup>2</sup>&#x2009H.</h4>
+				<p>Also known as deuterium, 1 in 5000 hydrogen atoms are this isotope, with one proton, one neutron, and one electron.<br><button id='makeH2' onclick="makeH(2)"  style="font-family:orbitron;font-weight:900" class="button1">Attempt to synthesize</button></p>
+			</div>
+		</div>
+	</div>
+
+
+
+</div>
+
+<div id="Research" class="tabcontent">
+	<p>Here is where you will find research.</p>
+</div>
+
+</body>
+
+
+
+<link href="notification-style.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/siiimple-toast/dist/siiimple-toast.min.js"></script>
+
+<script src="notifications.js"></script>
+
+<script type="text/javascript" src="collapsible.js"></script>
+
+<script type="text/javascript" src="tabs.js"></script>

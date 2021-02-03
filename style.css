@@ -1,0 +1,40 @@
+@font-face { font-family: voyager; src: url('fonts/Voyager Light.otf'); } 
+h4 {
+	font-family: voyager
+}
+
+.pinned {
+	top: 90%;
+	right: 5%;
+	position: fixed;
+	width: 90%;
+	background-color: #beefff;
+	font-size: 20px;
+	color: #008;
+	text-align: center;
+	padding: 20px 0px 500px 10px;
+	border-radius: 25px 25px 0px 0px;
+}
+
+
+button.button1 {
+	display:inline-block;
+	padding:0.35em 1.2em;
+	border:0.2em solid #FFFFFF;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Orbitron';
+	font-weight:900;
+	color:#FFFFFF;
+	background-color:#000080;
+	text-align:center;
+	transition: all 0.2s;
+}
+button.button1:hover{
+	color:#000000;
+	background-color:#70BAFF;
+	border-color: rgba(100,255,255,1);
+	border-width: 0.3em;
+}
