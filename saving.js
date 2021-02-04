@@ -3,6 +3,8 @@ var gameLoad = {};
 
 function getGame() {
 	game = {
+		gameTime: gameTime,
+
 		hadrons: document.getElementById("hadrons").style.display,
 
 		H1show: document.getElementById("H1").style.display,
@@ -28,6 +30,8 @@ function loadGame() {
 	game = gameLoad;
 	console.log(game);
 	
+	gameTime = game.gameTime;
+
 	document.getElementById("toggleHadrons").style.display = game.hadrons;
 	document.getElementById("hadrons").style.display = game.hadrons;
 
@@ -40,6 +44,7 @@ function loadGame() {
 	hadron00 = game.hadron00;
 
 	electronvolts = game.electronvolts;
+
 	gluons = game.gluons;
 	electrons = game.electrons;
 	upQuarks = game.upQuarks;
@@ -48,6 +53,9 @@ function loadGame() {
 	strangeQuarks = game.strangeQuarks;
 	topQuarks = game.topQuarks;
 	bottomQuarks = game.bottomQuarks;
+
+	protons = game.protons;
+	neutrons = game.neutrons;
 }
 
 function confirmLoad() {
