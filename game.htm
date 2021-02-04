@@ -6,6 +6,8 @@
 	<script type="text/javascript" src="resourceObserver.js"></script>
 	<script type="text/javascript" src="resources.js"></script>
 	<script type="text/javascript" src="saving.js"></script>
+	<script type="text/javascript" src="loading.js"></script>
+	<script type="text/javascript" src="splash.js"></script>
 
 
 	<link rel="stylesheet" href="popup.css">
@@ -20,9 +22,14 @@
 		}
 	</style>
 </head>
-<body style="font-family:orbitron;font-weight:bold;color:#ffffff;background-color:#000020" onLoad="hideAll(); confirmLoad();">
+<body style="font-family:orbitron;font-weight:bold;color:#ffffff;background-color:#000020" onLoad="splash(); hideAll();">
 
-<p class="pinned"><span style="float: left; width: 10%;"><br><img src='icons/atom-white.svg' height="48" class="invert" style="margin: -20px; object-position: 0px 0px;" /></span><span  style="float: left; width: 30%;"><br>Welcome to The Atomizer!</span></center></span><span style="float: left; width: 30%;"><br>v0.2</center></span><span style="float: left; width: 10%;"><br>&nbsp;</center></span></p>
+<div id="loadingscreen" class="loadingscreen">
+		<img src='icons/atom-white.svg' height="75%" style="margin: 7% 0% -5% 0%" />
+		<h1 id="splash" style="margin: 5% 0% 10% 0%; font-size: 72px;">Splash text goes here!</h1>
+</div>
+
+<p class="pinned"><span style="float: left; width: 10%;"><br><img src='icons/atom-white.svg' height="48" class="invert" style="margin: -20px; object-position: 0px 0px;" /></span><span  style="float: left; width: 30%;"><br>Welcome to The Atomizer!</span></center></span><span style="float: left; width: 30%;"><br>v0.2</center></span><span style="float: left; width: 10%;"><br>asdf</center></span></p>
 
 <button class="tablink" onclick="openPage('Resources', this)" id="defaultOpen">Resources</button>
 <button class="tablink" onclick="openPage('Research', this)">Research</button>
