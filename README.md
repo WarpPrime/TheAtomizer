@@ -7,9 +7,15 @@ Currently, this game is in Alpha development, meaning that there will be frequen
 
 ## Road Map / Future Plans
 #### v0.3 The Atomic Update
+ - Achievements
+ - Rewards
  - Add functionality to the Atoms section
  - Add research
  - Neutrons now will decay
+ 
+## Known Bugs
+ - Opening a blue section then opening a purple section does not render the content.
+   - Solution: Open the blue section, then the purple section. Then collapse and reopen the blue section.
  
 ## Changelog
 #### v0.2 Hello World!
