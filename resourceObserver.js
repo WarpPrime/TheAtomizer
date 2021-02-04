@@ -30,3 +30,14 @@ function updateText() {
 	}
 
 }
+
+class Clock {
+	tick() {
+		gameTime = gameTime + 0.1;
+	}
+
+}
+
+var clock = new Clock();
+
+var clockTick = setInterval(clock.tick, 100);
