@@ -37,6 +37,7 @@ var splashTextArray = [
 "Created using block coding!",
 "Decaying protons...",
 "Initializing random event...",
+"Play in fullscreen!",
 ]
 
 function splash() {
