@@ -59,6 +59,7 @@ function confirmLoad() {
 	else {
 		localStorage.removeItem('saveGame');
 	}
+	setTimeout(function(){ fadeOutEffect(); }, 3000);
 
 }
 
