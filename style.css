@@ -3,6 +3,16 @@ h4 {
 	font-family: voyager
 }
 
+.loadingscreen {
+	top: 50%;
+	width: 100%;
+	height: 100%
+	position: fixed;
+	text-align: center;
+	z-indez: 1000;
+	background-color: #000020;
+}
+
 .pinned {
 	top: 90%;
 	right: 5%;
