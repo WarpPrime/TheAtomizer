@@ -38,6 +38,7 @@ var splashTextArray = [
 "Decaying protons...",
 "Initializing random event...",
 "Play in fullscreen!",
+"Procrastinating...",
 ]
 
 function splash() {
