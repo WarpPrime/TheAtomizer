@@ -2,6 +2,8 @@
 
 var electronvolts = 0;
 
+var gameTime = 0;
+
 // Elementary particles
 
 var gluons = 0;
