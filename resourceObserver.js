@@ -1,7 +1,5 @@
 var hadron00 = 0;
 
-
-
 function updateText() {
 	document.getElementById("electronvolts").innerHTML = electronvolts.toFixed();
 	document.getElementById("est_electronvolts").innerHTML = nFormatter(electronvolts, 3);
@@ -20,6 +18,14 @@ function updateText() {
 
 	document.getElementById("protons").innerHTML = protons.toFixed();
 	document.getElementById("neutrons").innerHTML = neutrons.toFixed();
+
+	document.getElementById("darkMatter").innerHTML = nFormatter(darkMatter, 3, "foo");
+
+	document.getElementById("cosmicString").innerHTML = cosmicStrings.toFixed();
+	document.getElementById("stringCost").innerHTML = stringCost.toFixed();
+
+	document.getElementById("hTweaks").innerHTML = hTweaks.toFixed();
+	document.getElementById("hBarCost").innerHTML = hBarCost.toFixed();
 
 	if (document.getElementById("hadrons").style.display == "none" && hadron00 == 0 && upQuarks >= 3 && downQuarks >= 3) {
 		hadron00 = 1;
@@ -59,3 +65,17 @@ class Clock {
 var clock = new Clock();
 
 var clockTick = setInterval(clock.tick, 100);
+
+class Research {
+	science() {
+		if (cosmicStrings > 0) {
+			darkMatter = darkMatter + (0.1 * (0.1 * cosmicStrings));
+		}
+		updateText();
+	}
+
+}
+
+var research = new Research();
+
+var researchScience = setInterval(research.science, 100);
