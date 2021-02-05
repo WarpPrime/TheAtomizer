@@ -13,9 +13,8 @@ Currently, this game is in Alpha development, meaning that there will be frequen
  - Add research
  - Neutrons now will decay
  
-## Known Bugs
- - Opening a blue section then opening a purple section does not render the content.
-   - Solution: Open the blue section, then the purple section. Then collapse and reopen the blue section.
+## Known Bugs - See the "Issues" section.
+
  
 ## Changelog
 #### v0.3.2
