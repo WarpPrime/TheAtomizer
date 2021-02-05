@@ -1,6 +1,22 @@
+// Research
+
+var darkMatter = 5;
+
+var cosmicStrings = 0;
+
+var stringCost = 5;
+
+var hTweaks = 0;
+
+var hBarCost = 10;
+
+var creationRate = 2;
+
 // Energy
 
 var electronvolts = 0;
+
+// Misc
 
 var gameTime = 0;
 
