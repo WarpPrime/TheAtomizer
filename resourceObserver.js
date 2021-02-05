@@ -39,17 +39,17 @@ class Clock {
 		var bar = document.getElementById("playBar")
 		gameTime = gameTime + 0.1;
 
-		if (a.innerHTML === "10 minutes" && ((Math.round(gameTime * 10) / 10) % 6) == 0) {
-			if (bar.style.width <= "99%") {
+		if (a.innerHTML === "10 minutes" && ((Math.round(gameTime * 10) / 10) % 6) == 0 && Number(bar.style.width.replace('%','')) <= 100) {
+			if (Number(bar.style.width.replace('%','')) <= 99) {
 				set("playBar",gameTime/6);
 			}
 			else {
 				if (playBarReward == 0) {
-					bar.style.width = "100%";
-					bar.innerHTML = "100%";
 					achievementGet("Play for 10 minutes", "electronvolts", 1e9);
 					playBarReward = playBarReward + 1;
 				}
+				bar.style.width = "100%";
+				bar.innerHTML = "100%";
 			}
 		}
 	}
