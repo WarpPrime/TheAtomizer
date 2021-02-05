@@ -9,6 +9,7 @@
 	<script type="text/javascript" src="loading.js"></script>
 	<script type="text/javascript" src="splash.js"></script>
 	<script type="text/javascript" src="progress-bar.js"></script>
+	<script type="text/javascript" src="science.js"></script>
 
 
 	<link rel="stylesheet" href="popup.css">
@@ -24,7 +25,7 @@
 		}
 	</style>
 </head>
-<body style="font-family:orbitron;font-weight:bold;color:#ffffff;background-color:#000020" onLoad="splash(); hideAll();">
+<body style="font-family:orbitron;font-weight:bold;color:#ffffff;background-color:#000028" onLoad="splash(); hideAll();">
 
 <div id="loadingscreen" class="loadingscreen">
 		<img src='icons/atom-white.svg' height="75%" style="margin: 2% 0% -7% 0%" />
@@ -34,7 +35,7 @@
 <p class="pinned">
 <span style="float: left; width: 10%;"><br><img src='icons/atom-white.svg' height="48" class="invert" style="margin: -20px; object-position: 0px 0px;" /></span>
 <span  style="float: left; width: 30%;"><br>Welcome to The Atomizer!</span></center></span>
-<span style="float: left; width: 30%;"><br>v0.3.2</center></span>
+<span style="float: left; width: 30%;"><br>v0.4 Beta</center></span>
 <span style="float: left; width: 10%;"><br>&nbsp;</center></span>
 </p>
 
@@ -97,7 +98,32 @@
 </div>
 
 <div id="Research" class="tabcontent">
-	<p>Here is where you will find research.</p>
+	<div id="dark_matter">
+		<h3 style="color:#9020ff;font-family:orbitron;padding:2%;">Dark matter is what keeps your universe in order. You have <span id="darkMatter">5</span> g of Dark Matter.</h3>
+	</div>
+	<p><br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
+
+	<button id="toggleScienceProducer" class="collapsible2">Toggle Dark Matter Producers</button>
+	<div id="scienceProducers" class="content">
+		<div id="cosmic_string">
+			<h4>You have <span id="cosmicString">0</span> Cosmic Strings.</h4>
+			<p>Cosmic strings are one-dimensional quantum fluctuations in space time. This discrepancy produces Dark Matter, powering your research. Each produces 0.1 dark matter per second.
+			<br><button id='makeString' onclick="makeString()"  style="font-family:orbitron;font-weight:900" class="button2">Generate cosmic string - Cost: <span id="stringCost">5</span> Dark Matter</button>
+			</p>
+		</div>
+	</div>
+
+
+	<button id="toggleScienceBuys" class="collapsible2">Toggle Dark Matter Upgrades</button>
+	<div id="scienceProducers" class="content">
+		<div id="hBar">
+			<h4>You have edited <span style="font-family: Orbitron;">h </span><span id="hTweaks">0</span> times.</h4>
+			<p>H-bar, represented as h, is a constant that predicts the rate of quantum fluctuations. For each time you tweak h's value, your quark production rate increases.
+			<br><button id='editHBar' onclick="editHBar()"  style="font-family:orbitron;font-weight:900" class="button2">Edit h - Cost: <span id="hBarCost">10</span> Dark Matter</button>
+			</p>
+		</div>
+	</div>
+
 </div>
 
 <div id="Achievements" class="tabcontent">
@@ -113,6 +139,8 @@
 		</div>
 	</div>
 </div>
+
+<p><br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
 
 </body>
 
