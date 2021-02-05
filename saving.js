@@ -21,6 +21,16 @@ function getGame() {
 		bottomQuarks: bottomQuarks,
 		protons: protons,
 		neutrons: neutrons,
+
+		darkMatter: darkMatter,
+
+		cosmicStrings: cosmicStrings,
+		stringCost: stringCost,
+
+		hTweaks: hTweaks,
+		hBarCost: hBarCost,
+
+		creationRate: creationRate
 	};
 }
 
@@ -56,6 +66,18 @@ function loadGame() {
 
 	protons = game.protons;
 	neutrons = game.neutrons;
+
+	darkMatter = game.darkMatter;
+
+	cosmicStrings = game.cosmicStrings;
+	stringCost = game.stringCost;
+
+	hTweaks = game.hTweaks;
+	hBarCost = game.hBarCost;
+
+	creationRate = game.creationRate;
+
+	qGen = setInterval(q.Quark, Math.round(1000/creationRate));
 }
 
 function confirmLoad() {
