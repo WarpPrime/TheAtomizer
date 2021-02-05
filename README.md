@@ -18,6 +18,13 @@ Currently, this game is in Alpha development, meaning that there will be frequen
    - Solution: Open the blue section, then the purple section. Then collapse and reopen the blue section.
  
 ## Changelog
+#### v0.3.2
+ - Bugfix for the achievement
+ - Playtime achievement now gives a reward
+
+#### v0.3.1
+ - Added play time achievement (buggy)
+
 #### v0.3 The Splashy Update
  - Bugfixes
  - Splash text implemented
