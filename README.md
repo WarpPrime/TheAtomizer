@@ -5,7 +5,7 @@ Welcome to The Atomizer! This game is a scientific incremental game, starting wi
 
 Currently, this game is in Alpha development, meaning that there will be frequent updates. This includes extra content, bugfixes, and surprise stuff :D However, you do not have to worry about your saves being wiped.
 
-**WARNING: After a major version update, you may have to reset your game.**
+**WARNING: After a major version update, you will have to reset your game.**
 
 ## Road Map / Future Plans
 #### v0.5 The Atomic Update
