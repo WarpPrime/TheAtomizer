@@ -31,7 +31,7 @@ button.button1 {
 	display:inline-block;
 	padding:0.35em 1.2em;
 	border:0.2em solid #FFFFFF;
-	margin:0 0.3em 0.3em 0;
+	margin:0.4em 0.3em 0.3em 0;
 	border-radius:0.12em;
 	box-sizing: border-box;
 	text-decoration:none;
@@ -46,5 +46,27 @@ button.button1:hover{
 	color:#000000;
 	background-color:#70BAFF;
 	border-color: rgba(100,255,255,1);
+	border-width: 0.3em;
+}
+
+button.button2 {
+	display:inline-block;
+	padding:0.35em 1.2em;
+	border:0.2em solid #FFFFFF;
+	margin:0.4em 0.3em 0.3em 0;
+	border-radius:0.12em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Orbitron';
+	font-weight:900;
+	color:#FFFFFF;
+	background-color:#709;
+	text-align:center;
+	transition: all 0.2s;
+}
+button.button2:hover{
+	color:#fff;
+	background-color:#c0f;
+	border-color: rgba(255, 158, 249,1);
 	border-width: 0.3em;
 }
