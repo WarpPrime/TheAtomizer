@@ -16,6 +16,9 @@ Currently, this game is in Alpha development, meaning that there will be frequen
 
  
 ## Changelog
+#### v0.4.1
+ - Added favicon and site title
+
 #### v0.4 Beta - Time for Science!
  - Basic research
  - Bugfixes
