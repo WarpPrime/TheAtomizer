@@ -9,6 +9,12 @@
   width: 25%;
 }
 
+.column3 {
+  float: left;
+  width: 33%;
+  padding: 0.166666666666%;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
