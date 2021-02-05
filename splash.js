@@ -42,6 +42,7 @@ var splashTextArray = [
 ]
 
 function splash() {
+	scroll(0,0);
 	disableScroll();
 
 	var splashText = splashTextArray[Math.floor(Math.random()*splashTextArray.length)];
