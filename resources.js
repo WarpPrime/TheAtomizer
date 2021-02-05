@@ -19,3 +19,27 @@ var bottomQuarks = 0;
 
 var protons = 0;
 var neutrons = 0;
+
+function varText(a) {
+	if (a == "upQuarks") {
+		return "up quarks";
+	}
+	else if (a == "downQuarks") {
+		return "down quarks";
+	}
+	else if (a == "strangeQuarks") {
+		return "strange quarks";
+	}
+	else if (a == "charmQuarks") {
+		return "charm quarks";
+	}
+	else if (a == "topQuarks") {
+		return "top quarks";
+	}
+	else if (a == "bottomQuarks") {
+		return "bottom quarks";
+	}
+	else {
+		return a;
+	}
+}
