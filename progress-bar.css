@@ -1,0 +1,14 @@
+.barBG {
+  width: 100%;
+  align: center;
+  background-color: grey;
+}
+.bar {
+  width: 0.01;
+  align: center;
+  height: 30px;
+  background-color: #4af;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
+}
