@@ -1,3 +1,5 @@
+const varToString = varObj => Object.keys(varObj)[0]
+
 function saveNotif() {
 	siiimpleToast.message("<h3>Game Saved</h3><br>Your game has been saved", {
 		position: "bottom right",
@@ -8,7 +10,14 @@ function saveNotif() {
 }
 
 function achievementGet(name, rewardMaterial, rewardAmount) {
+	siiimpleToast.success("<h3>Achievement Reached</h3><br>" + name + "<br>You earned&nbsp;" + nFormatter(rewardAmount) + "&nbsp;" + varText(rewardMaterial), {
+		position: "bottom right",
+		margin: 10,
+		delay: 0,
+		duration: 5000
+	});
 
+	window[rewardMaterial] = window[rewardMaterial] + rewardAmount;
 
 }
 
