@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="saving.js"></script>
 	<script type="text/javascript" src="loading.js"></script>
 	<script type="text/javascript" src="splash.js"></script>
+	<script type="text/javascript" src="progress-bar.js"></script>
 
 
 	<link rel="stylesheet" href="popup.css">
@@ -15,6 +16,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="collapsible.css">
 	<link rel="stylesheet" href="tabs.css">
+	<link rel="stylesheet" href="progress-bar.css">
 
     	<style>
 		.invert { /* class invert svg on an img tag */
@@ -100,6 +102,16 @@
 
 <div id="Achievements" class="tabcontent">
 	<p>Here is where you will find your achievements.</p>
+
+	<div style="float: left; width: 48%; padding: 1%"> <!-- description -->
+		<p>Play for <span id="playTime">10 minutes</span></p>
+	</div>
+
+	<div style="float: left; width: 48%; padding: 1%"> <!-- bars -->
+		<div class="barBG">
+			<div class="bar" id="playBar">0%</div>
+		</div>
+	</div>
 </div>
 
 </body>
